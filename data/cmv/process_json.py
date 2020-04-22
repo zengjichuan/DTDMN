@@ -223,8 +223,8 @@ def get_sim(cid_lst1, cid_recorder):
     return max
 
 
-train_lst = read_file(os.path.join("all", "train_period_data.jsonlist"))
-test_lst = read_file(os.path.join("all", "heldout_period_data.jsonlist"))
+train_lst = read_file(os.path.join("origin", "all", "train_period_data.jsonlist"))
+test_lst = read_file(os.path.join("origin", "all", "heldout_period_data.jsonlist"))
 
 # resplit data to 80/20
 all_lst = train_lst + test_lst
